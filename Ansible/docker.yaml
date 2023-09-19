@@ -19,7 +19,7 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: sevenajay
-        password: your_dockerhub_password
+        password: dckr_pat_n3rrKF4kgVcDuAYjmjqjEJWg6eg
 
     - name: Push image
       command: docker push sevenajay/petstore:latest
