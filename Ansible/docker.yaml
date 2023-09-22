@@ -24,8 +24,5 @@
     - name: Push image
       command: docker push sevenajay/petstore:latest
 
-    - name: Trivy Scan
-      command: trivy image sevenajay/petstore:latest > trivy.txt
-
     - name: Run container
       command: docker run -d --name pet1 -p 8081:8080 sevenajay/petstore:latest
